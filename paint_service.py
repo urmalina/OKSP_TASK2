@@ -1,13 +1,13 @@
 # paint_service.py
 
-from user_input import UserInput
-from price_calculator import PriceCalculator
+from UserInput import UserInput
+from PriceCalculator import PriceCalculator
 
 
 class PaintService:
     """Класс, который объединяет ввод, расчет и вывод результата."""
 
-    def init(self):
+    def __init__(self):
         self.user_input = UserInput()
         self.calculator = PriceCalculator()
 
@@ -20,6 +20,6 @@ class PaintService:
         )
 
 
-if name == "main":
+if __name__ == "__main__":
     service = PaintService()
     service.run()
